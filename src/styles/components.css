@@ -1,0 +1,128 @@
+
+/* Card Styles */
+.glass-card {
+  @apply bg-white bg-opacity-20 backdrop-blur-lg rounded-xl border border-opacity-20 shadow-lg;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+  @apply p-4 md:p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow;
+}
+
+.stat-card {
+  @apply flex flex-col space-y-2 p-4 rounded-lg;
+}
+
+/* Chart Containers */
+.chart-container {
+  @apply w-full bg-white rounded-lg shadow-lg overflow-hidden;
+  height: min-content;
+  min-height: 300px;
+  padding: 1rem;
+}
+
+.chart-wrapper {
+  @apply w-full overflow-hidden;
+  height: 250px;
+}
+
+/* Table Styles */
+.data-table-container {
+  @apply w-full overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0;
+}
+
+.data-table {
+  @apply w-full border-collapse min-w-[640px] md:min-w-0;
+}
+
+.data-table th {
+  @apply bg-gray-50 text-left p-2 md:p-4 font-semibold text-gray-600 text-sm md:text-base whitespace-nowrap;
+}
+
+.data-table td {
+  @apply border-t p-2 md:p-4 text-gray-700 text-sm md:text-base;
+}
+
+.data-table tr:hover {
+  @apply bg-gray-50;
+}
+
+/* Form Elements */
+.form-group {
+  @apply flex flex-col md:flex-row gap-4 items-stretch md:items-end;
+}
+
+.form-input {
+  @apply w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.form-select {
+  @apply w-full p-2 border rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+/* Date Range Picker */
+.date-range-picker {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.date-input-group {
+  @apply flex flex-col space-y-1;
+}
+
+/* Button Variations */
+.btn-primary {
+  @apply bg-blue-600 text-white px-3 md:px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm md:text-base;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-700 px-3 md:px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors text-sm md:text-base;
+}
+
+.btn-danger {
+  @apply bg-red-600 text-white px-3 md:px-4 py-2 rounded-lg hover:bg-red-700 transition-colors text-sm md:text-base;
+}
+
+/* Responsive Grid */
+.responsive-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  @apply fixed top-0 left-0 right-0 bg-white z-50 md:hidden;
+}
+
+/* Responsive Text */
+.responsive-text {
+  @apply text-sm md:text-base;
+}
+
+.responsive-heading {
+  @apply text-xl md:text-2xl lg:text-3xl font-bold;
+}
+
+/* Filter Controls */
+.filter-controls {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-4 mb-6;
+}
+
+/* Chart Responsiveness */
+.chart-responsive {
+  @apply w-full overflow-hidden;
+  height: 250px;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    min-height: 250px;
+    padding: 0.75rem;
+  }
+  
+  .chart-wrapper {
+    height: 200px;
+  }
+}
