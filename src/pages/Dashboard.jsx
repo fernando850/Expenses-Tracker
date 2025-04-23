@@ -120,7 +120,7 @@ function Dashboard() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="space-y-6"
+      className="w-full max-w-7xl px-2 md:px-4 mx-auto space-y-6"
     >
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold">Dashboard</h1>
@@ -197,7 +197,10 @@ function Dashboard() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="chart-container">
           <h2 className="text-xl font-semibold mb-4">Spending by Category</h2>
-          <PieChartComponent data={categoryData} />
+          <div className="chart-legend flex flex-wrap gap-2 justify-center text-sm">
+            <PieChartComponent data={categoryData} />
+          </div>
+          
         </div>
         <div className="chart-container">
           <h2 className="text-xl font-semibold mb-4">Monthly Expenses</h2>

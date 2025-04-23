@@ -98,7 +98,9 @@ function Reports() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="chart-container">
             <h3 className="text-lg font-semibold mb-4">Spending by Category</h3>
-            <PieChartComponent data={categoryData} />
+            <div className="chart-legend flex flex-wrap gap-2 justify-center text-sm">
+              <PieChartComponent data={categoryData} />
+            </div>
           </div>
           <div className="chart-container">
             <h3 className="text-lg font-semibold mb-4">Spending Over Time</h3>

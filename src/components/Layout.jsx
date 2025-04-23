@@ -52,7 +52,7 @@ function Layout() {
       </div>
 
       {/* Main layout container */}
-      <div className="flex flex-1 mt-14 md:mt-0">
+      <div className="flex flex-1">
         {/* Sidebar for desktop */}
         <motion.aside
           initial={{ x: -250 }}
@@ -135,7 +135,7 @@ function Layout() {
         </AnimatePresence>
 
         {/* Main Content */}
-        <main className="flex-1 px-4 md:px-8 py-6 overflow-x-hidden">
+        <main className="flex-1 py-6 overflow-x-hidden">
           <Outlet />
         </main>
       </div>

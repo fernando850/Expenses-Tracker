@@ -113,13 +113,21 @@
 /* Chart Responsiveness */
 .chart-responsive {
   @apply w-full overflow-hidden;
-  height: 250px;
+  height: 300px;
+}
+
+.chart-legend {
+  @apply flex flex-wrap justify-center gap-2 text-sm;
 }
 
 @media (max-width: 768px) {
   .chart-container {
-    min-height: 250px;
+    min-height: 320px;
     padding: 0.75rem;
+  }
+
+  .chart-legend {
+    @apply text-xs gap-1;
   }
   
   .chart-wrapper {
