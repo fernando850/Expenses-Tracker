@@ -71,7 +71,7 @@ function Reports() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="space-y-6"
+      className="w-full max-w-7xl px-2 md:px-4 mx-auto space-y-6"
     >
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold">Reports & Insights</h1>
