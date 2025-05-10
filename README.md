@@ -57,3 +57,8 @@ npm run dev
 
 Visit http://localhost:5173 in your browser.
 
+📄 License
+MIT License. Feel free to use, fork, and enhance!
+
+
+
